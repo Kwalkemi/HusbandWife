@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BharatDataSet" targetNamespace="http://tempuri.org/BharatDataSet.xsd" xmlns:mstns="http://tempuri.org/BharatDataSet.xsd" xmlns="http://tempuri.org/BharatDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BharatConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BharatConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HusbandWife.Properties.Settings.GlobalReference.Default.BharatConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Husband_WifeTableAdapter" GeneratorDataComponentClassName="Husband_WifeTableAdapter" Name="Husband_Wife" UserDataComponentName="Husband_WifeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BharatConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Husband_Wife_Id, Husband_Wife_Type, Husband_Wife_Amt, Husband_Wife_Date, HUSBAND_WIFE_TYPE_ID, IsNUll(A.EXPENSES_CATEGORY_ID,0) EXPENSES_CATEGORY_ID, B.EXPENSES_CATEGORY_NAME FROM dbo.Husband_Wife A
+left Join Expenses_Category B
+On A.EXPENSES_CATEGORY_ID = B.Expenses_Category_Id 
+Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Husband_Wife_Id" DataSetColumn="Husband_Wife_Id" />
+              <Mapping SourceColumn="Husband_Wife_Type" DataSetColumn="Husband_Wife_Type" />
+              <Mapping SourceColumn="Husband_Wife_Amt" DataSetColumn="Husband_Wife_Amt" />
+              <Mapping SourceColumn="Husband_Wife_Date" DataSetColumn="Husband_Wife_Date" />
+              <Mapping SourceColumn="HUSBAND_WIFE_TYPE_ID" DataSetColumn="HUSBAND_WIFE_TYPE_ID" />
+              <Mapping SourceColumn="EXPENSES_CATEGORY_ID" DataSetColumn="EXPENSES_CATEGORY_ID" />
+              <Mapping SourceColumn="EXPENSES_CATEGORY_NAME" DataSetColumn="EXPENSES_CATEGORY_NAME" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BharatDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BharatDataSet" msprop:Generator_UserDSName="BharatDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Husband_Wife" msprop:Generator_TableClassName="Husband_WifeDataTable" msprop:Generator_TableVarName="tableHusband_Wife" msprop:Generator_RowChangedName="Husband_WifeRowChanged" msprop:Generator_TablePropName="Husband_Wife" msprop:Generator_RowDeletingName="Husband_WifeRowDeleting" msprop:Generator_RowChangingName="Husband_WifeRowChanging" msprop:Generator_RowEvHandlerName="Husband_WifeRowChangeEventHandler" msprop:Generator_RowDeletedName="Husband_WifeRowDeleted" msprop:Generator_RowClassName="Husband_WifeRow" msprop:Generator_UserTableName="Husband_Wife" msprop:Generator_RowEvArgName="Husband_WifeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Husband_Wife_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHusband_Wife_Id" msprop:Generator_ColumnPropNameInRow="Husband_Wife_Id" msprop:Generator_ColumnPropNameInTable="Husband_Wife_IdColumn" msprop:Generator_UserColumnName="Husband_Wife_Id" type="xs:int" />
+              <xs:element name="Husband_Wife_Type" msprop:Generator_ColumnVarNameInTable="columnHusband_Wife_Type" msprop:Generator_ColumnPropNameInRow="Husband_Wife_Type" msprop:Generator_ColumnPropNameInTable="Husband_Wife_TypeColumn" msprop:Generator_UserColumnName="Husband_Wife_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Husband_Wife_Amt" msprop:Generator_ColumnVarNameInTable="columnHusband_Wife_Amt" msprop:Generator_ColumnPropNameInRow="Husband_Wife_Amt" msprop:Generator_ColumnPropNameInTable="Husband_Wife_AmtColumn" msprop:Generator_UserColumnName="Husband_Wife_Amt" type="xs:int" minOccurs="0" />
+              <xs:element name="Husband_Wife_Date" msprop:Generator_ColumnVarNameInTable="columnHusband_Wife_Date" msprop:Generator_ColumnPropNameInRow="Husband_Wife_Date" msprop:Generator_ColumnPropNameInTable="Husband_Wife_DateColumn" msprop:Generator_UserColumnName="Husband_Wife_Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HUSBAND_WIFE_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnHUSBAND_WIFE_TYPE_ID" msprop:Generator_ColumnPropNameInRow="HUSBAND_WIFE_TYPE_ID" msprop:Generator_ColumnPropNameInTable="HUSBAND_WIFE_TYPE_IDColumn" msprop:Generator_UserColumnName="HUSBAND_WIFE_TYPE_ID" type="xs:int" />
+              <xs:element name="EXPENSES_CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnEXPENSES_CATEGORY_ID" msprop:Generator_ColumnPropNameInRow="EXPENSES_CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="EXPENSES_CATEGORY_IDColumn" msprop:Generator_UserColumnName="EXPENSES_CATEGORY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EXPENSES_CATEGORY_NAME" msprop:Generator_ColumnVarNameInTable="columnEXPENSES_CATEGORY_NAME" msprop:Generator_ColumnPropNameInRow="EXPENSES_CATEGORY_NAME" msprop:Generator_ColumnPropNameInTable="EXPENSES_CATEGORY_NAMEColumn" msprop:Generator_UserColumnName="EXPENSES_CATEGORY_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Husband_Wife" />
+      <xs:field xpath="mstns:Husband_Wife_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
