@@ -1,7 +1,6 @@
 D:\Visual Studio Project\HusbandWife\BharatDB\bin\Debug\BharatDB.dacpac
 D:\Visual Studio Project\HusbandWife\BharatDB\bin\Debug\BharatDB.dll
 D:\Visual Studio Project\HusbandWife\BharatDB\bin\Debug\BharatDB.pdb
-D:\Visual Studio Project\HusbandWife\BharatDB\obj\Debug\BharatDB.sqlprojAssemblyReference.cache
 D:\Visual Studio Project\HusbandWife\BharatDB\obj\Debug\Model.xml
 D:\Visual Studio Project\HusbandWife\BharatDB\obj\Debug\refactor.xml
 D:\Visual Studio Project\HusbandWife\BharatDB\obj\Debug\postdeploy.sql

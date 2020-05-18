@@ -4,6 +4,7 @@ D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.applicati
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.exe
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.pdb
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\UserLibrary.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.ExpensesAnalysis.resources
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Form1.resources
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Properties.Resources.resources
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.GenerateResource.cache
@@ -14,6 +15,16 @@ D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.Co
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.exe
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.pdb
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csprojAssemblyReference.cache
-D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWifeAnalysis.exe
-D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWifeAnalysis.pdb
-D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWifeAnalysis.exe.config
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Helpers.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Mvc.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Razor.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Helpers.xml
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Mvc.xml
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Razor.xml
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.xml
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Razor.xml

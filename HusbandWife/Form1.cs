@@ -245,7 +245,7 @@ namespace HusbandWife
 
         private void btnAnalysis_Click(object sender, EventArgs e)
         {
-            HusbandWifeAnalysis.Form1 form = new HusbandWifeAnalysis.Form1();
+            ExpensesAnalysis form = new ExpensesAnalysis();
             form.ShowDialog();
         }
     }
