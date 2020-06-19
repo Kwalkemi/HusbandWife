@@ -64,6 +64,7 @@
     <Build Include="Table\CODE_VALUE.sql" />
     <Build Include="Table\HUSBAND_WIFE.sql" />
     <Build Include="Table\EXPENSES_CATEGORY.sql" />
+    <Build Include="Table\EXPENSES_TRACKER.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script\Code_Value.sql" />

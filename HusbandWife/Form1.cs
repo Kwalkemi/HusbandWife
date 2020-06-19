@@ -32,6 +32,7 @@ namespace HusbandWife
             LoadCategory();
             Sum();
             Result();
+
         }
 
         private void AddAmount(string astrType, string astrAmt, string adttime, string aintCategoryId)
