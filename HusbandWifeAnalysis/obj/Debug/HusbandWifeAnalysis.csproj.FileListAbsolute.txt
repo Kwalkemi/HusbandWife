@@ -1,9 +1,0 @@
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\bin\Debug\HusbandWifeAnalysis.exe.config
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\bin\Debug\HusbandWifeAnalysis.exe
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\bin\Debug\HusbandWifeAnalysis.pdb
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.Form1.resources
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.Properties.Resources.resources
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.csproj.GenerateResource.cache
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.csproj.CoreCompileInputs.cache
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.exe
-D:\Visual Studio Project\HusbandWife\HusbandWifeAnalysis\obj\Debug\HusbandWifeAnalysis.pdb

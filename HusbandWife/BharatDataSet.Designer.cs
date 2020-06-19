@@ -984,7 +984,7 @@ namespace HusbandWife.BharatDataSetTableAdapters {
             this._commandCollection[0].CommandText = @"SELECT Husband_Wife_Id, Husband_Wife_Type, Husband_Wife_Amt, Husband_Wife_Date, HUSBAND_WIFE_TYPE_ID, IsNUll(A.EXPENSES_CATEGORY_ID,0) EXPENSES_CATEGORY_ID, B.EXPENSES_CATEGORY_NAME FROM dbo.Husband_Wife A
 left Join Expenses_Category B
 On A.EXPENSES_CATEGORY_ID = B.Expenses_Category_Id 
-Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null";
+Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null order by Husband_Wife_Id desc";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

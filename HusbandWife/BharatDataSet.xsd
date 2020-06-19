@@ -9,13 +9,13 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Husband_WifeTableAdapter" GeneratorDataComponentClassName="Husband_WifeTableAdapter" Name="Husband_Wife" UserDataComponentName="Husband_WifeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="BharatConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="BharatConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT Husband_Wife_Id, Husband_Wife_Type, Husband_Wife_Amt, Husband_Wife_Date, HUSBAND_WIFE_TYPE_ID, IsNUll(A.EXPENSES_CATEGORY_ID,0) EXPENSES_CATEGORY_ID, B.EXPENSES_CATEGORY_NAME FROM dbo.Husband_Wife A
 left Join Expenses_Category B
 On A.EXPENSES_CATEGORY_ID = B.Expenses_Category_Id 
-Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null</CommandText>
+Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null order by Husband_Wife_Id desc</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -40,7 +40,7 @@ Where EXPENSES_CATEGORY_TABLE_VALUE = 'HUWF' or A.EXPENSES_CATEGORY_ID is null</
   <xs:element name="BharatDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BharatDataSet" msprop:Generator_UserDSName="BharatDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Husband_Wife" msprop:Generator_TableClassName="Husband_WifeDataTable" msprop:Generator_TableVarName="tableHusband_Wife" msprop:Generator_RowChangedName="Husband_WifeRowChanged" msprop:Generator_TablePropName="Husband_Wife" msprop:Generator_RowDeletingName="Husband_WifeRowDeleting" msprop:Generator_RowChangingName="Husband_WifeRowChanging" msprop:Generator_RowEvHandlerName="Husband_WifeRowChangeEventHandler" msprop:Generator_RowDeletedName="Husband_WifeRowDeleted" msprop:Generator_RowClassName="Husband_WifeRow" msprop:Generator_UserTableName="Husband_Wife" msprop:Generator_RowEvArgName="Husband_WifeRowChangeEvent">
+        <xs:element name="Husband_Wife" msprop:Generator_TableClassName="Husband_WifeDataTable" msprop:Generator_TableVarName="tableHusband_Wife" msprop:Generator_TablePropName="Husband_Wife" msprop:Generator_RowDeletingName="Husband_WifeRowDeleting" msprop:Generator_RowChangingName="Husband_WifeRowChanging" msprop:Generator_RowEvHandlerName="Husband_WifeRowChangeEventHandler" msprop:Generator_RowDeletedName="Husband_WifeRowDeleted" msprop:Generator_UserTableName="Husband_Wife" msprop:Generator_RowChangedName="Husband_WifeRowChanged" msprop:Generator_RowEvArgName="Husband_WifeRowChangeEvent" msprop:Generator_RowClassName="Husband_WifeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Husband_Wife_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHusband_Wife_Id" msprop:Generator_ColumnPropNameInRow="Husband_Wife_Id" msprop:Generator_ColumnPropNameInTable="Husband_Wife_IdColumn" msprop:Generator_UserColumnName="Husband_Wife_Id" type="xs:int" />

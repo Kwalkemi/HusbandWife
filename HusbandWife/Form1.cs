@@ -42,13 +42,14 @@ namespace HusbandWife
             ldict.Add("Husband_Wife_Amt", astrAmt);
             ldict.Add("Husband_Wife_Date", adttime);
             ldict.Add("EXPENSES_CATEGORY_ID", aintCategoryId);
+            ldict.Add("HUSBAND_WIFE_TYPE_ID", "1");
             ldBFunction.InsertIntoTable("Bharat", "Husband_Wife", ldict);
         }
 
         private void UpdateAmount(int aintId, string astrAmt, string adttime, int? ExpenseCtgryId)
         {
             DBFunction ldBFunction = new DBFunction();
-            string lstrQuery = "Update Husband_Wife Set Husband_Wife_Amt = " + Convert.ToInt32(astrAmt) + " , Husband_Wife_Date = '" + adttime + "' , EXPENSES_CATEGORY_ID = "+ ExpenseCtgryId +" Where Husband_Wife_Id = " + aintId;
+            string lstrQuery = "Update Husband_Wife Set Husband_Wife_Amt = " + Convert.ToInt32(astrAmt) + " , Husband_Wife_Date = '" + adttime + "' , EXPENSES_CATEGORY_ID = " + ExpenseCtgryId + " Where Husband_Wife_Id = " + aintId;
             ldBFunction.UpdateTable("Bharat", lstrQuery);
         }
 
@@ -88,13 +89,13 @@ namespace HusbandWife
 
         private void btnHusband_Click(object sender, EventArgs e)
         {
-            if (txtwifespend.Text == string.Empty)
+            if (txthusband.Text == string.Empty)
             {
                 errorProvider1.SetError(txthusband, "Please Enter the Amount");
             }
             else if (errorProvider1.GetError(txthusband) == string.Empty)
             {
-                AddAmount("HUSB", txthusband.Text, Convert.ToString(dateTimePickerhusb.Value), string.Empty);
+                AddAmount("HUSB", txthusband.Text, Convert.ToString(dateTimePickerhusb.Value), "24");
                 this.husband_WifeTableAdapter.Fill(this.bharatDataSet.Husband_Wife);
             }
             Sum();
@@ -149,7 +150,7 @@ namespace HusbandWife
         {
             try
             {
-                int x = Int32.Parse(txtwifespend.Text);
+                int x = Int32.Parse(txthusband.Text);
                 errorProvider1.SetError(txthusband, "");
             }
             catch
@@ -212,7 +213,7 @@ namespace HusbandWife
             ldict.Add("Expenses_Category_Table_Id", "2");
             ldict.Add("Expenses_Category_Table_Value", "HUWF");
             string promptValue = Prompt.ShowAddCategoryDialog("Category Add Box");
-            if(promptValue != string.Empty)
+            if (promptValue != string.Empty)
             {
                 ldict.Add("Expenses_Category_Name", promptValue);
                 lDBFunction.InsertIntoTable("Bharat", "Expenses_Category", ldict);
@@ -226,14 +227,13 @@ namespace HusbandWife
             foreach (string item in cmbcategory.Items)
                 lstItem.Add(item);
             string promptValue = Prompt.ShowRemoveCategoryDialog("Category Remove Box", lstItem);
-            if(promptValue != string.Empty)
+            if (promptValue != string.Empty)
             {
-                string lstrQuery = "Select Top 1 Expenses_Category_Id from Expenses_Category where Expenses_Category_Table_Value = 'HUWF' and Expenses_Category_Name = '" + promptValue +"' order by 1 desc";
+                string lstrQuery = "Select Top 1 Expenses_Category_Id from Expenses_Category where Expenses_Category_Table_Value = 'HUWF' and Expenses_Category_Name = '" + promptValue + "' order by 1 desc";
                 string Id = lDBFunction.FetchScalarFromDatabase("Bharat", lstrQuery);
                 lstrQuery = "Delete Expenses_Category where Expenses_Category_Id = " + Id;
                 lDBFunction.UpdateTable("Bharat", lstrQuery);
             }
-
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HusbandWife", "HusbandWife\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BharatDB", "BharatDB\BharatDB.sqlproj", "{7D751C6D-773E-4429-B1CE-F25C180A7274}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monthy Expenses", "..\Monthy Expenses\Monthy Expenses\Monthy Expenses.csproj", "{CAED7070-4437-4D8B-9885-ACF685BB50E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{7D751C6D-773E-4429-B1CE-F25C180A7274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D751C6D-773E-4429-B1CE-F25C180A7274}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D751C6D-773E-4429-B1CE-F25C180A7274}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CAED7070-4437-4D8B-9885-ACF685BB50E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAED7070-4437-4D8B-9885-ACF685BB50E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAED7070-4437-4D8B-9885-ACF685BB50E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAED7070-4437-4D8B-9885-ACF685BB50E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
