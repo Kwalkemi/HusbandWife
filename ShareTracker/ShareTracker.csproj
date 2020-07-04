@@ -46,6 +46,9 @@
     <Reference Include="UserLibrary, Version=1.25.0.0, Culture=neutral, PublicKeyToken=89c23f9a86c5c286, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BharatDataSet.cs">
+      <DependentUpon>BharatDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BharatDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

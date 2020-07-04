@@ -39,49 +39,52 @@
             this.shareTrackerProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bharatDataSet = new ShareTracker.BharatDataSet();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.dateTimePickerExpense = new System.Windows.Forms.DateTimePicker();
+            this.dateBuy = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnShareAdd = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.rdDelivery = new System.Windows.Forms.RadioButton();
             this.lblShareType = new System.Windows.Forms.Label();
             this.rdOption = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.shareTrackerProcedureTableAdapter = new ShareTracker.BharatDataSetTableAdapters.ShareTrackerProcedureTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblBuyId = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBuyPrice = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBuyQty = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSellId = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSellPrice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSellQty = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dateSell = new System.Windows.Forms.DateTimePicker();
+            this.btnShareSell = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblChargeId = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtShareChargesAmt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnShareCharge = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtExtraChargeAmt = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dateExtraCharge = new System.Windows.Forms.DateTimePicker();
+            this.btnShareExtraCharge = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.shareTrackerProcedureTableAdapter = new ShareTracker.BharatDataSetTableAdapters.ShareTrackerProcedureTableAdapter();
+            this.lblShareName = new System.Windows.Forms.Label();
+            this.txtShareName = new System.Windows.Forms.TextBox();
+            this.btnShareHeader = new System.Windows.Forms.Button();
+            this.txtShareChargesDesc = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtExtraChargeName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shareTrackerProcedureBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bharatDataSet)).BeginInit();
@@ -104,7 +107,6 @@
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            
             // 
             // dataGridView1
             // 
@@ -126,7 +128,6 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(503, 594);
             this.dataGridView1.TabIndex = 5;
-            
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
             // 
             // SNo
@@ -182,12 +183,12 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // dateTimePickerExpense
+            // dateBuy
             // 
-            this.dateTimePickerExpense.Location = new System.Drawing.Point(221, 105);
-            this.dateTimePickerExpense.Name = "dateTimePickerExpense";
-            this.dateTimePickerExpense.Size = new System.Drawing.Size(160, 22);
-            this.dateTimePickerExpense.TabIndex = 16;
+            this.dateBuy.Location = new System.Drawing.Point(221, 105);
+            this.dateBuy.Name = "dateBuy";
+            this.dateBuy.Size = new System.Drawing.Size(160, 22);
+            this.dateBuy.TabIndex = 16;
             // 
             // lblDate
             // 
@@ -199,30 +200,29 @@
             this.lblDate.TabIndex = 15;
             this.lblDate.Text = "Buy Date: ";
             // 
-            // btnAdd
+            // btnShareAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnAdd.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAdd.Location = new System.Drawing.Point(406, 48);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(111, 40);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnShareAdd.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShareAdd.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.btnShareAdd.Location = new System.Drawing.Point(406, 48);
+            this.btnShareAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShareAdd.Name = "btnShareAdd";
+            this.btnShareAdd.Size = new System.Drawing.Size(111, 40);
+            this.btnShareAdd.TabIndex = 22;
+            this.btnShareAdd.Text = "Add";
+            this.btnShareAdd.UseVisualStyleBackColor = false;
+            this.btnShareAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnRefresh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRefresh.Location = new System.Drawing.Point(776, 14);
+            this.btnRefresh.Location = new System.Drawing.Point(962, 13);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(169, 44);
             this.btnRefresh.TabIndex = 25;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
-            
             // 
             // rdDelivery
             // 
@@ -263,40 +263,36 @@
             this.panel1.Controls.Add(this.lblShareType);
             this.panel1.Controls.Add(this.rdDelivery);
             this.panel1.Controls.Add(this.rdOption);
-            this.panel1.Location = new System.Drawing.Point(71, 12);
+            this.panel1.Location = new System.Drawing.Point(325, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(418, 52);
             this.panel1.TabIndex = 32;
             // 
-            // shareTrackerProcedureTableAdapter
-            // 
-            this.shareTrackerProcedureTableAdapter.ClearBeforeFill = true;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.lblBuyId);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.txtBuyPrice);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.txtBuyQty);
             this.panel2.Controls.Add(this.lblDate);
-            this.panel2.Controls.Add(this.dateTimePickerExpense);
-            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Controls.Add(this.dateBuy);
+            this.panel2.Controls.Add(this.btnShareAdd);
             this.panel2.Location = new System.Drawing.Point(22, 74);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(537, 144);
             this.panel2.TabIndex = 37;
             // 
-            // label9
+            // lblBuyId
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(216, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 27);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "BuyIdLabel";
+            this.lblBuyId.AutoSize = true;
+            this.lblBuyId.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.lblBuyId.Location = new System.Drawing.Point(216, 10);
+            this.lblBuyId.Name = "lblBuyId";
+            this.lblBuyId.Size = new System.Drawing.Size(118, 27);
+            this.lblBuyId.TabIndex = 23;
+            this.lblBuyId.Text = "BuyIdLabel";
             // 
             // label10
             // 
@@ -308,12 +304,12 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "Share Id: ";
             // 
-            // textBox5
+            // txtBuyPrice
             // 
-            this.textBox5.Location = new System.Drawing.Point(221, 45);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(138, 22);
-            this.textBox5.TabIndex = 21;
+            this.txtBuyPrice.Location = new System.Drawing.Point(221, 45);
+            this.txtBuyPrice.Name = "txtBuyPrice";
+            this.txtBuyPrice.Size = new System.Drawing.Size(138, 22);
+            this.txtBuyPrice.TabIndex = 21;
             // 
             // label11
             // 
@@ -335,38 +331,38 @@
             this.label12.TabIndex = 20;
             this.label12.Text = "Share Buy Quantity:";
             // 
-            // textBox6
+            // txtBuyQty
             // 
-            this.textBox6.Location = new System.Drawing.Point(221, 74);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(138, 22);
-            this.textBox6.TabIndex = 21;
+            this.txtBuyQty.Location = new System.Drawing.Point(221, 74);
+            this.txtBuyQty.Name = "txtBuyQty";
+            this.txtBuyQty.Size = new System.Drawing.Size(138, 22);
+            this.txtBuyQty.TabIndex = 21;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lblSellId);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtSellPrice);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtSellQty);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.dateSell);
+            this.panel3.Controls.Add(this.btnShareSell);
             this.panel3.Location = new System.Drawing.Point(22, 230);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(537, 144);
             this.panel3.TabIndex = 38;
             // 
-            // label1
+            // lblSellId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(216, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 27);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "SellIdLabel";
+            this.lblSellId.AutoSize = true;
+            this.lblSellId.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.lblSellId.Location = new System.Drawing.Point(216, 13);
+            this.lblSellId.Name = "lblSellId";
+            this.lblSellId.Size = new System.Drawing.Size(116, 27);
+            this.lblSellId.TabIndex = 23;
+            this.lblSellId.Text = "SellIdLabel";
             // 
             // label2
             // 
@@ -378,12 +374,12 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Share Id: ";
             // 
-            // textBox1
+            // txtSellPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 22);
-            this.textBox1.TabIndex = 21;
+            this.txtSellPrice.Location = new System.Drawing.Point(221, 45);
+            this.txtSellPrice.Name = "txtSellPrice";
+            this.txtSellPrice.Size = new System.Drawing.Size(138, 22);
+            this.txtSellPrice.TabIndex = 21;
             // 
             // label7
             // 
@@ -405,12 +401,12 @@
             this.label8.TabIndex = 20;
             this.label8.Text = "Share Sell Quantity: ";
             // 
-            // textBox2
+            // txtSellQty
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 22);
-            this.textBox2.TabIndex = 21;
+            this.txtSellQty.Location = new System.Drawing.Point(221, 74);
+            this.txtSellQty.Name = "txtSellQty";
+            this.txtSellQty.Size = new System.Drawing.Size(138, 22);
+            this.txtSellQty.TabIndex = 21;
             // 
             // label13
             // 
@@ -422,50 +418,49 @@
             this.label13.TabIndex = 15;
             this.label13.Text = "Sell Date: ";
             // 
-            // dateTimePicker1
+            // dateSell
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(221, 105);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(160, 22);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dateSell.Location = new System.Drawing.Point(221, 105);
+            this.dateSell.Name = "dateSell";
+            this.dateSell.Size = new System.Drawing.Size(160, 22);
+            this.dateSell.TabIndex = 16;
             // 
-            // button1
+            // btnShareSell
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(406, 48);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 40);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnShareSell.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShareSell.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.btnShareSell.Location = new System.Drawing.Point(406, 48);
+            this.btnShareSell.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShareSell.Name = "btnShareSell";
+            this.btnShareSell.Size = new System.Drawing.Size(111, 40);
+            this.btnShareSell.TabIndex = 22;
+            this.btnShareSell.Text = "Add";
+            this.btnShareSell.UseVisualStyleBackColor = false;
+            this.btnShareSell.Click += new System.EventHandler(this.btnShareSell_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.lblChargeId);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.txtShareChargesAmt);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Controls.Add(this.dateTimePicker2);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.txtShareChargesDesc);
+            this.panel4.Controls.Add(this.btnShareCharge);
             this.panel4.Location = new System.Drawing.Point(22, 392);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(537, 144);
+            this.panel4.Size = new System.Drawing.Size(537, 115);
             this.panel4.TabIndex = 39;
             // 
-            // label3
+            // lblChargeId
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(216, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 27);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "ChargeIdLabel";
+            this.lblChargeId.AutoSize = true;
+            this.lblChargeId.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
+            this.lblChargeId.Location = new System.Drawing.Point(216, 10);
+            this.lblChargeId.Name = "lblChargeId";
+            this.lblChargeId.Size = new System.Drawing.Size(147, 27);
+            this.lblChargeId.TabIndex = 23;
+            this.lblChargeId.Text = "ChargeIdLabel";
             // 
             // label4
             // 
@@ -477,12 +472,12 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Share Id: ";
             // 
-            // textBox3
+            // txtShareChargesAmt
             // 
-            this.textBox3.Location = new System.Drawing.Point(221, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 22);
-            this.textBox3.TabIndex = 21;
+            this.txtShareChargesAmt.Location = new System.Drawing.Point(221, 45);
+            this.txtShareChargesAmt.Name = "txtShareChargesAmt";
+            this.txtShareChargesAmt.Size = new System.Drawing.Size(138, 22);
+            this.txtShareChargesAmt.TabIndex = 21;
             // 
             // label5
             // 
@@ -490,113 +485,83 @@
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(50, 45);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 23);
+            this.label5.Size = new System.Drawing.Size(129, 23);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Share Buy Price: ";
+            this.label5.Text = "Share Charges: ";
             // 
-            // label6
+            // btnShareCharge
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(54, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 23);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Share Quantity: ";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(221, 73);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(138, 22);
-            this.textBox4.TabIndex = 21;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(11, 105);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(178, 23);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "Charge Applied Date: ";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(221, 105);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(160, 22);
-            this.dateTimePicker2.TabIndex = 16;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(406, 48);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 40);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnShareCharge.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShareCharge.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.btnShareCharge.Location = new System.Drawing.Point(406, 48);
+            this.btnShareCharge.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShareCharge.Name = "btnShareCharge";
+            this.btnShareCharge.Size = new System.Drawing.Size(111, 40);
+            this.btnShareCharge.TabIndex = 22;
+            this.btnShareCharge.Text = "Add";
+            this.btnShareCharge.UseVisualStyleBackColor = false;
+            this.btnShareCharge.Click += new System.EventHandler(this.btnShareCharge_Click);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.txtExtraChargeName);
+            this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.textBox8);
+            this.panel5.Controls.Add(this.txtExtraChargeAmt);
             this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.dateTimePicker3);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Location = new System.Drawing.Point(19, 550);
+            this.panel5.Controls.Add(this.dateExtraCharge);
+            this.panel5.Controls.Add(this.btnShareExtraCharge);
+            this.panel5.Location = new System.Drawing.Point(22, 525);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(537, 106);
+            this.panel5.Size = new System.Drawing.Size(537, 129);
             this.panel5.TabIndex = 40;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(58, 28);
+            this.label18.Location = new System.Drawing.Point(14, 28);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(126, 23);
+            this.label18.Size = new System.Drawing.Size(192, 23);
             this.label18.TabIndex = 20;
-            this.label18.Text = "Extra Charges: ";
+            this.label18.Text = "Extra Charges Amount: ";
             // 
-            // textBox8
+            // txtExtraChargeAmt
             // 
-            this.textBox8.Location = new System.Drawing.Point(225, 28);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(138, 22);
-            this.textBox8.TabIndex = 21;
+            this.txtExtraChargeAmt.Location = new System.Drawing.Point(225, 28);
+            this.txtExtraChargeAmt.Name = "txtExtraChargeAmt";
+            this.txtExtraChargeAmt.Size = new System.Drawing.Size(138, 22);
+            this.txtExtraChargeAmt.TabIndex = 21;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(24, 60);
+            this.label19.Location = new System.Drawing.Point(30, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(167, 23);
             this.label19.TabIndex = 15;
             this.label19.Text = "Extra Charges Date: ";
             // 
-            // dateTimePicker3
+            // dateExtraCharge
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(225, 60);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(160, 22);
-            this.dateTimePicker3.TabIndex = 16;
+            this.dateExtraCharge.Location = new System.Drawing.Point(225, 86);
+            this.dateExtraCharge.Name = "dateExtraCharge";
+            this.dateExtraCharge.Size = new System.Drawing.Size(160, 22);
+            this.dateExtraCharge.TabIndex = 16;
             // 
-            // button3
+            // btnShareExtraCharge
             // 
-            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(410, 25);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 40);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnShareExtraCharge.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShareExtraCharge.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.btnShareExtraCharge.Location = new System.Drawing.Point(410, 25);
+            this.btnShareExtraCharge.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShareExtraCharge.Name = "btnShareExtraCharge";
+            this.btnShareExtraCharge.Size = new System.Drawing.Size(111, 40);
+            this.btnShareExtraCharge.TabIndex = 22;
+            this.btnShareExtraCharge.Text = "Add";
+            this.btnShareExtraCharge.UseVisualStyleBackColor = false;
+            this.btnShareExtraCharge.Click += new System.EventHandler(this.btnShareExtraCharge_Click);
             // 
             // label15
             // 
@@ -607,12 +572,83 @@
             this.label15.TabIndex = 41;
             this.label15.Text = "lblUser";
             // 
+            // shareTrackerProcedureTableAdapter
+            // 
+            this.shareTrackerProcedureTableAdapter.ClearBeforeFill = true;
+            // 
+            // lblShareName
+            // 
+            this.lblShareName.AutoSize = true;
+            this.lblShareName.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShareName.Location = new System.Drawing.Point(14, 25);
+            this.lblShareName.Name = "lblShareName";
+            this.lblShareName.Size = new System.Drawing.Size(112, 23);
+            this.lblShareName.TabIndex = 42;
+            this.lblShareName.Text = "Share Name: ";
+            // 
+            // txtShareName
+            // 
+            this.txtShareName.Location = new System.Drawing.Point(125, 26);
+            this.txtShareName.Name = "txtShareName";
+            this.txtShareName.Size = new System.Drawing.Size(175, 22);
+            this.txtShareName.TabIndex = 43;
+            // 
+            // btnShareHeader
+            // 
+            this.btnShareHeader.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnShareHeader.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.btnShareHeader.Location = new System.Drawing.Point(762, 16);
+            this.btnShareHeader.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShareHeader.Name = "btnShareHeader";
+            this.btnShareHeader.Size = new System.Drawing.Size(111, 40);
+            this.btnShareHeader.TabIndex = 24;
+            this.btnShareHeader.Text = "Add";
+            this.btnShareHeader.UseVisualStyleBackColor = false;
+            this.btnShareHeader.Click += new System.EventHandler(this.btnShareHeader_Click);
+            // 
+            // txtShareChargesDesc
+            // 
+            this.txtShareChargesDesc.Location = new System.Drawing.Point(221, 73);
+            this.txtShareChargesDesc.Name = "txtShareChargesDesc";
+            this.txtShareChargesDesc.Size = new System.Drawing.Size(138, 22);
+            this.txtShareChargesDesc.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(3, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 23);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Share Charges Name: ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(28, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 23);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Extra Charges Name: ";
+            // 
+            // txtExtraChargeName
+            // 
+            this.txtExtraChargeName.Location = new System.Drawing.Point(225, 59);
+            this.txtExtraChargeName.Name = "txtExtraChargeName";
+            this.txtExtraChargeName.Size = new System.Drawing.Size(138, 22);
+            this.txtExtraChargeName.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(1266, 710);
+            this.Controls.Add(this.btnShareHeader);
+            this.Controls.Add(this.txtShareName);
+            this.Controls.Add(this.lblShareName);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -649,9 +685,9 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.DateTimePicker dateTimePickerExpense;
+        private System.Windows.Forms.DateTimePicker dateBuy;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnShareAdd;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblShareType;
@@ -672,39 +708,42 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pROFITLOSSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sHARESTRACKERHEADERIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblBuyId;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBuyPrice;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBuyQty;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSellId;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSellPrice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSellQty;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateSell;
+        private System.Windows.Forms.Button btnShareSell;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblChargeId;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtShareChargesAmt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnShareCharge;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtExtraChargeAmt;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dateExtraCharge;
+        private System.Windows.Forms.Button btnShareExtraCharge;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtShareName;
+        private System.Windows.Forms.Label lblShareName;
+        private System.Windows.Forms.Button btnShareHeader;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtShareChargesDesc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtExtraChargeName;
     }
 }
 
