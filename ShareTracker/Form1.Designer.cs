@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sHARESNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,7 +36,7 @@
             this.pROFITLOSSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sHARESTRACKERHEADERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shareTrackerProcedureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bharatDataSet = new ShareTracker.BharatDataSet();
+            this.bharatDataSet1 = new ShareTracker.BharatDataSet1();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.dateBuy = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
@@ -69,44 +68,37 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtShareChargesAmt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtShareChargesDesc = new System.Windows.Forms.TextBox();
             this.btnShareCharge = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.txtExtraChargeName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.txtExtraChargeAmt = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.dateExtraCharge = new System.Windows.Forms.DateTimePicker();
             this.btnShareExtraCharge = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.shareTrackerProcedureTableAdapter = new ShareTracker.BharatDataSetTableAdapters.ShareTrackerProcedureTableAdapter();
+            this.lblUser = new System.Windows.Forms.Label();
             this.lblShareName = new System.Windows.Forms.Label();
             this.txtShareName = new System.Windows.Forms.TextBox();
             this.btnShareHeader = new System.Windows.Forms.Button();
-            this.txtShareChargesDesc = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtExtraChargeName = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblTotalValue = new System.Windows.Forms.Label();
+            this.shareTrackerProcedureTableAdapter = new ShareTracker.BharatDataSet1TableAdapters.ShareTrackerProcedureTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shareTrackerProcedureBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bharatDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bharatDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnUpdate.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.Location = new System.Drawing.Point(1006, 345);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(127, 40);
-            this.btnUpdate.TabIndex = 4;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -122,12 +114,13 @@
             this.pROFITLOSSDataGridViewTextBoxColumn,
             this.sHARESTRACKERHEADERIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.shareTrackerProcedureBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(647, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(677, 83);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(503, 594);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView1_RowPostPaint);
             // 
             // SNo
@@ -139,14 +132,14 @@
             // sHARESNAMEDataGridViewTextBoxColumn
             // 
             this.sHARESNAMEDataGridViewTextBoxColumn.DataPropertyName = "SHARES_NAME";
-            this.sHARESNAMEDataGridViewTextBoxColumn.HeaderText = "Share Name";
+            this.sHARESNAMEDataGridViewTextBoxColumn.HeaderText = "SHARES_NAME";
             this.sHARESNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sHARESNAMEDataGridViewTextBoxColumn.Name = "sHARESNAMEDataGridViewTextBoxColumn";
             // 
             // sHAREAMTDataGridViewTextBoxColumn
             // 
             this.sHAREAMTDataGridViewTextBoxColumn.DataPropertyName = "SHARE_AMT";
-            this.sHAREAMTDataGridViewTextBoxColumn.HeaderText = "Share Amt";
+            this.sHAREAMTDataGridViewTextBoxColumn.HeaderText = "SHARE_AMT";
             this.sHAREAMTDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sHAREAMTDataGridViewTextBoxColumn.Name = "sHAREAMTDataGridViewTextBoxColumn";
             this.sHAREAMTDataGridViewTextBoxColumn.ReadOnly = true;
@@ -172,12 +165,12 @@
             // shareTrackerProcedureBindingSource
             // 
             this.shareTrackerProcedureBindingSource.DataMember = "ShareTrackerProcedure";
-            this.shareTrackerProcedureBindingSource.DataSource = this.bharatDataSet;
+            this.shareTrackerProcedureBindingSource.DataSource = this.bharatDataSet1;
             // 
-            // bharatDataSet
+            // bharatDataSet1
             // 
-            this.bharatDataSet.DataSetName = "BharatDataSet";
-            this.bharatDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bharatDataSet1.DataSetName = "BharatDataSet1";
+            this.bharatDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // errorProvider1
             // 
@@ -216,13 +209,14 @@
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnRefresh.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRefresh.Location = new System.Drawing.Point(962, 13);
+            this.btnRefresh.Font = new System.Drawing.Font("Palatino Linotype", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(1172, 45);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(169, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(82, 31);
             this.btnRefresh.TabIndex = 25;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // rdDelivery
             // 
@@ -251,7 +245,7 @@
             // 
             this.rdOption.AutoSize = true;
             this.rdOption.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
-            this.rdOption.Location = new System.Drawing.Point(158, 11);
+            this.rdOption.Location = new System.Drawing.Point(170, 11);
             this.rdOption.Name = "rdOption";
             this.rdOption.Size = new System.Drawing.Size(107, 31);
             this.rdOption.TabIndex = 29;
@@ -489,6 +483,23 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Share Charges: ";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(3, 72);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 23);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Share Charges Name: ";
+            // 
+            // txtShareChargesDesc
+            // 
+            this.txtShareChargesDesc.Location = new System.Drawing.Point(221, 73);
+            this.txtShareChargesDesc.Name = "txtShareChargesDesc";
+            this.txtShareChargesDesc.Size = new System.Drawing.Size(138, 22);
+            this.txtShareChargesDesc.TabIndex = 21;
+            // 
             // btnShareCharge
             // 
             this.btnShareCharge.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -516,11 +527,28 @@
             this.panel5.Size = new System.Drawing.Size(537, 129);
             this.panel5.TabIndex = 40;
             // 
+            // txtExtraChargeName
+            // 
+            this.txtExtraChargeName.Location = new System.Drawing.Point(225, 59);
+            this.txtExtraChargeName.Name = "txtExtraChargeName";
+            this.txtExtraChargeName.Size = new System.Drawing.Size(138, 22);
+            this.txtExtraChargeName.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(28, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 23);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Extra Charges Name: ";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label18.Location = new System.Drawing.Point(14, 28);
+            this.label18.Location = new System.Drawing.Point(7, 28);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(192, 23);
             this.label18.TabIndex = 20;
@@ -537,7 +565,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label19.Location = new System.Drawing.Point(30, 87);
+            this.label19.Location = new System.Drawing.Point(30, 90);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(167, 23);
             this.label19.TabIndex = 15;
@@ -545,7 +573,7 @@
             // 
             // dateExtraCharge
             // 
-            this.dateExtraCharge.Location = new System.Drawing.Point(225, 86);
+            this.dateExtraCharge.Location = new System.Drawing.Point(225, 90);
             this.dateExtraCharge.Name = "dateExtraCharge";
             this.dateExtraCharge.Size = new System.Drawing.Size(160, 22);
             this.dateExtraCharge.TabIndex = 16;
@@ -554,7 +582,7 @@
             // 
             this.btnShareExtraCharge.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnShareExtraCharge.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.btnShareExtraCharge.Location = new System.Drawing.Point(410, 25);
+            this.btnShareExtraCharge.Location = new System.Drawing.Point(403, 36);
             this.btnShareExtraCharge.Margin = new System.Windows.Forms.Padding(4);
             this.btnShareExtraCharge.Name = "btnShareExtraCharge";
             this.btnShareExtraCharge.Size = new System.Drawing.Size(111, 40);
@@ -563,18 +591,14 @@
             this.btnShareExtraCharge.UseVisualStyleBackColor = false;
             this.btnShareExtraCharge.Click += new System.EventHandler(this.btnShareExtraCharge_Click);
             // 
-            // label15
+            // lblUser
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1182, 12);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 17);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "lblUser";
-            // 
-            // shareTrackerProcedureTableAdapter
-            // 
-            this.shareTrackerProcedureTableAdapter.ClearBeforeFill = true;
+            this.lblUser.AutoSize = true;
+            this.lblUser.Location = new System.Drawing.Point(1157, 12);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(52, 17);
+            this.lblUser.TabIndex = 41;
+            this.lblUser.Text = "lblUser";
             // 
             // lblShareName
             // 
@@ -588,7 +612,7 @@
             // 
             // txtShareName
             // 
-            this.txtShareName.Location = new System.Drawing.Point(125, 26);
+            this.txtShareName.Location = new System.Drawing.Point(136, 26);
             this.txtShareName.Name = "txtShareName";
             this.txtShareName.Size = new System.Drawing.Size(175, 22);
             this.txtShareName.TabIndex = 43;
@@ -597,48 +621,52 @@
             // 
             this.btnShareHeader.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnShareHeader.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.btnShareHeader.Location = new System.Drawing.Point(762, 16);
+            this.btnShareHeader.Location = new System.Drawing.Point(762, 19);
             this.btnShareHeader.Margin = new System.Windows.Forms.Padding(4);
             this.btnShareHeader.Name = "btnShareHeader";
-            this.btnShareHeader.Size = new System.Drawing.Size(111, 40);
+            this.btnShareHeader.Size = new System.Drawing.Size(100, 35);
             this.btnShareHeader.TabIndex = 24;
             this.btnShareHeader.Text = "Add";
             this.btnShareHeader.UseVisualStyleBackColor = false;
             this.btnShareHeader.Click += new System.EventHandler(this.btnShareHeader_Click);
             // 
-            // txtShareChargesDesc
+            // contextMenuStrip1
             // 
-            this.txtShareChargesDesc.Location = new System.Drawing.Point(221, 73);
-            this.txtShareChargesDesc.Name = "txtShareChargesDesc";
-            this.txtShareChargesDesc.Size = new System.Drawing.Size(138, 22);
-            this.txtShareChargesDesc.TabIndex = 21;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detailToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 28);
             // 
-            // label6
+            // detailToolStripMenuItem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(3, 72);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 23);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Share Charges Name: ";
+            this.detailToolStripMenuItem.Name = "detailToolStripMenuItem";
+            this.detailToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.detailToolStripMenuItem.Text = "Detail";
             // 
-            // label1
+            // lblTotal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(28, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 23);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Extra Charges Name: ";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(901, 25);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(62, 23);
+            this.lblTotal.TabIndex = 44;
+            this.lblTotal.Text = "Total : ";
             // 
-            // txtExtraChargeName
+            // lblTotalValue
             // 
-            this.txtExtraChargeName.Location = new System.Drawing.Point(225, 59);
-            this.txtExtraChargeName.Name = "txtExtraChargeName";
-            this.txtExtraChargeName.Size = new System.Drawing.Size(138, 22);
-            this.txtExtraChargeName.TabIndex = 24;
+            this.lblTotalValue.AutoSize = true;
+            this.lblTotalValue.Font = new System.Drawing.Font("Palatino Linotype", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalValue.Location = new System.Drawing.Point(979, 26);
+            this.lblTotalValue.Name = "lblTotalValue";
+            this.lblTotalValue.Size = new System.Drawing.Size(62, 23);
+            this.lblTotalValue.TabIndex = 45;
+            this.lblTotalValue.Text = "Total : ";
+            // 
+            // shareTrackerProcedureTableAdapter
+            // 
+            this.shareTrackerProcedureTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -646,10 +674,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(1266, 710);
+            this.Controls.Add(this.lblTotalValue);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnShareHeader);
             this.Controls.Add(this.txtShareName);
             this.Controls.Add(this.lblShareName);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -657,14 +687,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnUpdate);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shareTrackerProcedureBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bharatDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bharatDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -676,13 +705,13 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.DateTimePicker dateBuy;
@@ -699,14 +728,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EXPENSES_CATEGORY_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn EXPENSES_TYPE;
         private System.Windows.Forms.DataGridViewTextBoxColumn EXPENSES_TRACKER_ID;
-        private BharatDataSet bharatDataSet;
-        private System.Windows.Forms.BindingSource shareTrackerProcedureBindingSource;
-        private BharatDataSetTableAdapters.ShareTrackerProcedureTableAdapter shareTrackerProcedureTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sHARESNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sHAREAMTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pROFITLOSSDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sHARESTRACKERHEADERIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblBuyId;
         private System.Windows.Forms.Label label10;
@@ -736,7 +757,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DateTimePicker dateExtraCharge;
         private System.Windows.Forms.Button btnShareExtraCharge;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.TextBox txtShareName;
         private System.Windows.Forms.Label lblShareName;
         private System.Windows.Forms.Button btnShareHeader;
@@ -744,6 +765,18 @@
         private System.Windows.Forms.TextBox txtShareChargesDesc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtExtraChargeName;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem detailToolStripMenuItem;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblTotalValue;
+        private System.Windows.Forms.BindingSource shareTrackerProcedureBindingSource;
+        private BharatDataSet1 bharatDataSet1;
+        private BharatDataSet1TableAdapters.ShareTrackerProcedureTableAdapter shareTrackerProcedureTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sHARESNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sHAREAMTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pROFITLOSSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sHARESTRACKERHEADERIDDataGridViewTextBoxColumn;
     }
 }
 

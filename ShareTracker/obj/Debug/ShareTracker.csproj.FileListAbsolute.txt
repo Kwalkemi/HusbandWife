@@ -1,0 +1,13 @@
+D:\Visual Studio Project\HusbandWife\ShareTracker\bin\Debug\ShareTracker.exe.config
+D:\Visual Studio Project\HusbandWife\ShareTracker\bin\Debug\ShareTracker.exe
+D:\Visual Studio Project\HusbandWife\ShareTracker\bin\Debug\ShareTracker.pdb
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.csprojAssemblyReference.cache
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.Form1.resources
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.Properties.Resources.resources
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.csproj.GenerateResource.cache
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.csproj.CoreCompileInputs.cache
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.exe
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.pdb
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.Login.resources
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.Register.resources
+D:\Visual Studio Project\HusbandWife\ShareTracker\obj\Debug\ShareTracker.Share.resources

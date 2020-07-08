@@ -1,3 +1,11 @@
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csprojAssemblyReference.cache
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.ExpensesAnalysis.resources
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Form1.resources
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Properties.Resources.resources
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.GenerateResource.cache
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.CoreCompileInputs.cache
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.exe
+D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.pdb
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.exe.config
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.exe.manifest
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\HusbandWife.application
@@ -17,13 +25,6 @@ D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.Razor.xml
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.xml
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Visual Studio Project\HusbandWife\HusbandWife\bin\Debug\System.Web.WebPages.Razor.xml
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.ExpensesAnalysis.resources
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Form1.resources
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.Properties.Resources.resources
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.GenerateResource.cache
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.CoreCompileInputs.cache
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.exe.manifest
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.application
 D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.csproj.CopyComplete
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.exe
-D:\Visual Studio Project\HusbandWife\HusbandWife\obj\Debug\HusbandWife.pdb
